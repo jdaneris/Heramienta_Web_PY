@@ -1,0 +1,174 @@
+{% extends './layout.html' %}
+
+{% block titulo %}
+    Página principal
+{% endblock %}
+
+
+{% block body %}
+    
+  <main>
+
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="/static/img/kmeansuni.png" class="d-block w-10" alt="kmeansuni"  width="100%" height="100%">
+          <div class="container">
+            <div class="carousel-caption text-end">
+              <h1>Metodo K-Means</h1>
+              <p></p>
+              <p><a  class="btn btn-lg btn-primary " style="background-color: #00482B;" href="/K_Means">Entérate más sobre el método aquí </a></p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item active">
+          <img src="/static/img/Power Bi.png"  alt="Power BI"  width="100%" height="100%">
+          <div class="container">
+            <div class="carousel-caption text-end">
+              <h1>Power BI.</h1>
+              <p><a class="btn btn-lg btn-primary " style="background-color: #00482B;" href="/Power_BI">Más información</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previo</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    
+    
+    <div class="container marketing">
+      <hr class="featurette-divider">
+      <div class="row justify-content-around">
+        <div class="col-md-5 order-md-1">
+          <img src="/static/img/Logos.gif" aline="left" alt="Logos" >
+        </div>
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading fw-normal lh-1">Resumen </h2>
+        <p class="lead"> Este proyecto muestra un interés de interpretación, lectura y comprensión gráfica de los resultados obtenidos por los estudiantes de último grado en la prueba saber 11, en la provincia de Ubaté, el objetivo es visualizar los resultados obtenidos usando la técnica de K-means para conseguir predicciones de los datos emitidos por el ICFES, y para ser consultados por las instituciones educativas de la región</p>
+      </div>
+    </div>
+
+    <!-- Contenedor de los objetivos del proyecto -->
+    <hr class="featurette-divider">
+    <div class="row featurette">
+      <div class="sppb-col-md-12">
+        <h2 >Objetivo general</h2>
+        <p  class="lead" style="font-size: 14pt;">Centralizar los resultados de las pruebas saber 11 de las instituciones de educación media de la provincia de Ubaté, para facilitar su análisis y visualización </p>
+      </div>
+      
+      <!--
+      <div class="col-md-5">
+        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="300" height="300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">100x100</text></svg>
+          -->
+      </div>
+    </div>
+    <br>
+    <div class="container marketing">
+      <div class="row">
+        <br>
+        <h3>Objetivos específicos  </h3>
+        <div class="col-lg-4">
+          <img src="https://img.freepik.com/foto-gratis/concepto-educacion-estudiante-estudiar-brainstorming-campus-concepto-cerca-estudiantes-que-discuten-su-tema-libros-o-libros-texto-enfoque-selectivo_1418-627.jpg?w=2000" alt="Metodología" class="bd-placeholder-img rounded-circle" width="240" height="240">
+          <h2 class="fw-normal">Objetivo 1</h2>
+          <p>Analizar las pruebas saber de las diferentes instituciones educativas de la provincia de Ubaté en un periodo comprendido entre los años 2020 a 2022.</p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img src="https://st4.depositphotos.com/7968596/25752/v/600/depositphotos_257522956-stock-illustration-outline-unsupervised-learning-vector-icon.jpg" alt="Metodología" class="bd-placeholder-img rounded-circle" width="240" height="240">
+          <h2 class="fw-normal">Objetivo 2</h2>
+          <p>Establecer características de relación entre las variables a partir del aprendizaje no supervisado en entornos educativos de provincia de Ubaté.</p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img src="https://img.freepik.com/vector-gratis/ilustracion-icono-computadora_53876-5559.jpg?w=2000" alt="Metodología" class="bd-placeholder-img rounded-circle" width="240" height="240">
+          <h2 class="fw-normal">Objetivo 3</h2>
+          <p>Desarrollar una página web que permita consolidar los resultados obtenidos de los análisis. </p>
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+      <br>
+      <!-- COMENZAR LAS CARACTERÍSTICAS-->
+      <hr class="featurette-divider">
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading fw-normal lh-1">Metodología</h2>
+          <p class="lead">Dentro del desarrollo de la página web para la visualización de los resultados de las pruebas saber se va a tener en cuenta tres metodologías una de Trabajo, de Investigación y de Desarrollo</p>
+            <p class="lead">Metodología de Trabajo:
+              <span class="tooltipCustom">
+                Kanban 
+                <span class="tooltipCustomtextCustom">El método Kanban se utiliza para controlar y monitorear este proyecto, se decidido utilizar Kanban porque el proyecto es desarrollo de software y tipo proyectos que requieren alta organización y sincronización entre los actores del desarrollo equipo. La mayoría de las tareas dependen en gran medida del desempeño humano. miembros del equipo y su coordinación para trabajar juntos, individualmente o telecomunicación
+                </span> 
+              </span>
+            </p>
+            <p class="lead">Metodología de Investigación Cuabtitaivo: Este proyecto se basa en una investigación que utiliza una combinación de métodos, recopilar y analizar datos
+              <span class="tooltipCustom">
+                cuantitativos
+                <span class="tooltipCustomtextCustom">Una investigación de enfoque cuantitativo utiliza un método deductivo que se caracteriza por ir de lo general a lo particular. Recopilará variables cuantitativas, o sea, datos numéricos como los resultados de las pruebas saber. Esto debido a que se maneja una gran magnitud de números 
+                </span> 
+              </span>
+            </p>
+            <p class="lead">Metodología de Desarrollo: Evoluciona en una serie de secciones evolutivas, en las primeras iteraciones, se puede proporcionar un modelo o un prototipo, las iteraciones consecutivas producen versiones cada vez más completas del sistema, el equipo de desarrollo desglosa el modelo en
+              <span class="tooltipCustom">
+                espiral
+                <span class="tooltipCustomtextCustom">A medida que comienza la evolución, el equipo de desarrollo realiza iteraciones implícitas en el sentido de las agujas del reloj, comenzando desde el centro, el riesgo se considera a medida que se desarrolla cada revolución. En cada etapa de la evolución se establecen puntos de referencia: la combinación de los productos del trabajo y las condiciones en la trayectoria de la espiral
+                </span> 
+              </span>
+            </p>
+          
+        </div>
+        <div class="col-md-5">
+          <iframe width="560" height="460" src="/static/img/Metodología.mp4" frameborder="0" allow="autoplay"; encrypted-media allowfullscreen></iframe>
+
+            
+      </div>
+
+
+      <div class="sppb-col-md-12">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="row">
+
+          <h2 >Conclusiones</h2>
+          <div class="col-lg-4">
+            <span class="tooltipCustom">
+              <img src="https://skat.ihmc.us/rid=1QC4GF2DH-WZZX63-2R88/Dibujo.jpg" alt="Metodología" class="bd-placeholder-img rounded-circle" width="240" height="240">
+              <span class="tooltipCustomtextCustom">Una organización básica en Excel de los diferentes resultados de las pruebas saber 
+              </span> 
+            </span>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <span class="tooltipCustom">
+              <img src="https://png.pngtree.com/png-clipart/20210308/original/pngtree-data-analysis-scene-vector-without-background-png-image_5769361.jpg" alt="Metodología" class="bd-placeholder-img rounded-circle" width="240" height="240">
+              <span class="tooltipCustomtextCustom">Con la técnica de K-means se logra hacer un análisis transparente y una predicción mediante clúster
+              </span> 
+            </span>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <span class="tooltipCustom">
+              <img src="https://lccopen.tech/wp-content/uploads/2020/06/pine-watt-3_Xwxya43hE-unsplash-1.jpg" alt="Metodología" class="bd-placeholder-img rounded-circle" width="240" height="240">
+              <span class="tooltipCustomtextCustom">Se recomienda visualizar esta información en Power Bi  debido a que es una herramienta versátil que permite actualización y tener una continuidad en el proyecto que se esta realizando 
+
+              </span> 
+          </div><!-- /.col-lg-4 -->
+        </div><!-- /.row -->
+      </div>
+      
+    </div>
+  </main>
+  
+
+<!-- /.row -->
+
+{% endblock %}

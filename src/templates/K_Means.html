@@ -1,0 +1,93 @@
+{% extends './layout.html' %}
+
+{% block titulo %}
+    Metodo K-Means
+{% endblock %}
+
+
+{% block body %}
+    <main>
+        <!-- Creacion del carrusel con imagenes-->
+        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+
+        </div>
+        <div class="carousel-inner">
+            
+            <div class="carousel-item active">
+                <img src="/static/img/LC y MAT y LC,SC.png" class="d-block w-10" alt="LC y MAT y LC,SC"  width="100%" height="100%">
+            </div>
+            <div class="carousel-item active">
+            <img src="/static/img/kmeansuni.png" class="d-block w-10" alt="kmeansuni"  width="100%" height="100%">
+        
+            </div>
+            <div class="carousel-item">
+                <img src="/static/img/SC y NAT y MAT,ING.png" class="d-block w-10" alt="SC y NAT y MAT,ING"  width="100%" height="100%">
+            
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previo</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+        </div>
+
+        <div class="container marketing">
+        
+                <!-- COMENZAR LAS CARACTERÍSTICAS-->
+            <hr class="featurette-divider">
+
+            <div class="row featurette">
+            <div class="col-md-7">
+                <h2 class="featurette-heading fw-normal lh-1">K-Means</h2>
+                <p class="lead">Es un método diseñado para dividir un conjunto de n observaciones en k grupos. Cada grupo está representado por el valor medio de los puntos que lo componen, el representante de cada grupo se llama centroide, es el número de grupos a determinar k es un parámetro para configurar previamente. El método de agrupamiento comienza con k centroides colocados aleatoriamente y asigna cada observación al centroide más cercano, una vez asignados, los centroides se mueven a la posición promedio de todos los datos asignados a ellos y los puntos se reasignan en función de las nuevas posiciones de los centroides.</p>
+            </div>
+            <div class="col-md-5">
+                <img src="https://datascience.eu/wp-content/uploads/2019/12/Screenshot-2020-10-17-at-13.30.08.png" width="500" height="500">
+            </div>
+            </div>
+        
+            <div class="container marketing">
+                <hr class="featurette-divider">
+                <div class="row justify-content-around">
+                  <div class="col-md-5 order-md-1">
+                    <img src="/static/img/Curva.png" aline="left" alt="Curva" width="500" height="500".>
+                  </div>
+                <div class="col-md-6 order-md-2">
+                  <h2 class="featurette-heading fw-normal lh-1">Elegir el valor de K</h2>
+                  <p class="lead"> Este algoritmo funciona pre-seleccionando un valor de K. Para encontrar el número de clusters en los datos, deberemos ejecutar el algoritmo para un rango de valores K, ver los resultados y comparar características de los grupos obtenidos. En general no hay un modo exacto de determinar el valor K, pero se puede estimar con aceptable precisión siguiendo la siguiente técnica:
+                    Una de las métricas usada para comparar resultados es la distancia media entre los puntos de datos y su centroid. Como el valor de la media diminuirá a medida de aumentemos el valor de K, deberemos utilizar la distancia media al centroide en función de K y entontrar el “punto codo”, donde la tasa de descenso se “afila”.</p>
+                </div>
+            </div>
+
+            
+            <!-- COMENZAR LAS CARACTERÍSTICAS-->
+            <hr class="featurette-divider">
+
+            <div class="row featurette">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading fw-normal lh-1"></h2>
+                    <p class="lead">Aquí podemos ver el algoritmo de K-Means con K=5 ha agrupado a las instituciones  de  Ubaté teniendo en cuenta las  5 materias de las pruebas saber de 11° : Lectura crítica, Matemáticas, Sociales y Ciudadanas, Ciencias Naturales, e Inglés.</p>
+                </div>
+                <div class="col-md-5">
+                    <img src="/static/img/kmeans.png" aline="left" alt="kmeans" width="500" height="500".>
+                </div>
+            </div>           
+
+
+
+
+        </div>
+    
+
+    </main>
+
+
+{% endblock %}
